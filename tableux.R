@@ -7,5 +7,6 @@ tableux<-function(T){
 	for(i in 1:ncol(RES)){
 		RES[,i]<-cumsum(RES[,i])
 		}
+	colnames(RES)<-UN	
 	return(RES)
 	}
